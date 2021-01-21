@@ -1,6 +1,7 @@
 // .vuepress/config.js
 module.exports = {
     title: 'Chemotion',
+    base: process.env.NODE_ENV === 'production' ? '/chemotion-docs/' : '',
     themeConfig: {
         sidebar: ['/', 'docs'],
         nav: [
@@ -9,3 +10,5 @@ module.exports = {
         ],
     },
 }
+
+console.log({ NODE_ENV: process.env.NODE_ENV })

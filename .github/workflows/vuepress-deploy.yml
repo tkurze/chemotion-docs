@@ -15,3 +15,4 @@ jobs:
         TARGET_BRANCH: public
         BUILD_SCRIPT: npm i && npm run docs:build
         BUILD_DIR: docs/.vuepress/dist/
+        NODE_ENV: production
