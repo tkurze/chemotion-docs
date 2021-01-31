@@ -68,7 +68,7 @@ Here, the last line is optional but highly recommended, since it does create a d
 The next step is to install dependencies that are needed by the application and are not present in the container:
 
 ```
-docker-compose run app /bin/bash -c 'pwd ; /usr/local/nvm/versions/node/v12.18.3/bin/npm i'
+docker-compose run app /bin/bash -c '/usr/local/nvm/versions/node/v12.18.3/bin/npm i'
 
 docker-compose run app /bin/bash -c 'source /usr/local/nvm/nvm.sh;\
  cd node_modules/@novnc/noVNC;\
