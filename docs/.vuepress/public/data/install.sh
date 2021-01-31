@@ -11,6 +11,8 @@ trap 'echo "\"${last_command}\" command filed with exit code $?."' EXIT
 export CES_HOST_PATH=$(pwd)/chemotion_eln_server
 export CES_DOCKER_PATH=$(pwd)/chemotion-docker
 
+mkdir -p ${CES_DOCKER_PATH}
+
 git clone https://git.scc.kit.edu/ComPlat/chemotion_eln_server.git
 cd chemotion_eln_server
 git checkout development
