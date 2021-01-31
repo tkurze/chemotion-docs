@@ -17,8 +17,8 @@ To setup the Chemotion ELN using Docker, Docker and Docker-compose have to be in
 
 In addition you need that latest version of our Docker build files. They can be found here:
 
-[Dockerfile](data/Dockerfile)
-[docker-compise.yml](data/docker-compose.yml)
+-   [Dockerfile](data/Dockerfile)
+-   [docker-compise.yml](data/docker-compose.yml)
 
 Download those files and place them in a separate folder (further referred to as `CES_DOCKER_PATH` as it should contain all the files to build and run the container).
 
@@ -51,9 +51,6 @@ After the container has been built, the ELN service has to be configured using i
 If you just want to use the example configuration, you can copy the example files:
 
 ```
-# mv $CES_HOST_PATH/config/datacollectors.yml.example $CES_HOST_PATH/config/datacollectors.yml
-# mv $CES_HOST_PATH/config/storage.yml.example $CES_HOST_PATH/config/storage.yml
-
 cp ${CES_HOST_PATH}/config/datacollectors.yml.example ${CES_HOST_PATH}/config/datacollectors.yml
 cp ${CES_HOST_PATH}/config/storage.yml.example ${CES_HOST_PATH}/config/storage.yml
 ```
@@ -96,6 +93,7 @@ docker-compose up -d
 ```
 
 The services are now up and running and will be available on [localhost:8000](http://localhost:8000).
+To simplify this installation process, the steps are all gathered in a single shell script that can be found [here](https://ptrxyz.github.io/chemotion-docs/data/install.sh). Feel free to use this, yet this does not consider any user specific configuration and is thus not meant to be used in a production environment.
 
 ### Setting up a Reverse-Proxy
 
