@@ -97,8 +97,6 @@ To simplify this installation process, the steps are all gathered in a single sh
 
 ### Setting up a Reverse-Proxy
 
-NGinx as Revers-Proxy goes here. Mb LE certificates for SSL?
-
 ```
-
+Todo: NGinx as Revers-Proxy goes here. Mb LE certificates for SSL?
 ```

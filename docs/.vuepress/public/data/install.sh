@@ -8,8 +8,8 @@ cd chemotion_eln_server
 git checkout development
 
 cd $CES_DOCKER_PATH
-wget -O https://ptrxyz.github.io/chemotion-docs/data/Dockerfile
-wget -O https://ptrxyz.github.io/chemotion-docs/data/docker-compose.yml
+wget https://ptrxyz.github.io/chemotion-docs/data/Dockerfile
+wget https://ptrxyz.github.io/chemotion-docs/data/docker-compose.yml
 
 echo "CES_HOST_PATH=${CES_HOST_PATH}\nCES_DOCKER_PATH=${CES_DOCKER_PATH}" > .env
 
