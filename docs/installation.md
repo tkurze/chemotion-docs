@@ -93,7 +93,7 @@ docker-compose up -d
 ```
 
 The services are now up and running and will be available on [localhost:8000](http://localhost:8000).
-To simplify this installation process, the steps are all gathered in a single shell script that can be found [here](https://ptrxyz.github.io/chemotion-docs/data/install.sh). Feel free to use this, yet this does not consider any user specific configuration and is thus not meant to be used in a production environment.
+To simplify this installation process, the steps are all gathered in a single shell script that can be found [here](https://ptrxyz.github.io/chemotion-docs/data/install.sh). Feel free to use this, yet this does not consider any user specific configuration and is thus not meant to be used in a production environment. Further, the script does not check if any files in the target folders `$(pwd)/chemotion_eln_server` and `$(pwd)/chemotion-docker` exist. Files might be overwritten, so handle with care!
 
 ### Setting up a Reverse-Proxy
 
