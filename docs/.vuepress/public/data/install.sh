@@ -21,7 +21,7 @@ cd $CES_DOCKER_PATH
 wget https://ptrxyz.github.io/chemotion-docs/data/Dockerfile
 wget https://ptrxyz.github.io/chemotion-docs/data/docker-compose.yml
 
-echo "CES_HOST_PATH=${CES_HOST_PATH}\nCES_DOCKER_PATH=${CES_DOCKER_PATH}" > .env
+echo -e "CES_HOST_PATH=${CES_HOST_PATH}\nCES_DOCKER_PATH=${CES_DOCKER_PATH}" > .env
 
 docker-compose build --no-cache
 

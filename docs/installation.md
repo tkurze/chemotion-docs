@@ -18,7 +18,7 @@ To setup the Chemotion ELN using Docker, Docker and Docker-compose have to be in
 In addition you need that latest version of our Docker build files. They can be found here:
 
 -   [Dockerfile](data/Dockerfile)
--   [docker-compise.yml](data/docker-compose.yml)
+-   [docker-compose.yml](data/docker-compose.yml)
 
 Download those files and place them in a separate folder (further referred to as `CES_DOCKER_PATH` as it should contain all the files to build and run the container).
 
@@ -92,7 +92,7 @@ cd ${CES_DOCKER_PATH}
 docker-compose up -d
 ```
 
-The services are now up and running and will be available on [localhost:8000](http://localhost:8000).
+The services are now up and running and will be available on [localhost:3000](http://localhost:3000).
 To simplify this installation process, the steps are all gathered in a single shell script that can be found [here](https://ptrxyz.github.io/chemotion-docs/data/install.sh). Feel free to use this, yet this does not consider any user specific configuration and is thus not meant to be used in a production environment. Further, the script does not check if any files in the target folders `$(pwd)/chemotion_eln_server` and `$(pwd)/chemotion-docker` exist. Files might be overwritten, so handle with care!
 
 ### Setting up a Reverse-Proxy
